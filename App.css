@@ -1,0 +1,28 @@
+.App {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+[data-accordion] {
+}
+[data-panel-title] {
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 15px 25px;
+  cursor: pointer;
+  border-top: 1px solid #edf2f8;
+  border-bottom: 1px solid white;
+  transition: border 0.2s, font-weight 0.2s;
+}
+[data-panel-content] {
+  background-color: #edf2f8;
+}
+
+[data-panel-title].disabled {
+  background: #f3f6fc;
+  color: #99c9ff;
+  border: 1px solid #cee4fd;
+  cursor: not-allowed;
+}
